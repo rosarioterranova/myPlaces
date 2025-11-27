@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Places I've visited</title>
+  <title>Posti che ho visitato</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
   <link
     rel="stylesheet"
@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="map-title">Places I've visited ✈️</div>
+  <div id="map-title">Posti che ho visitato ✈️</div>
   <div id="map"></div>
   <div id="map-stats">
-    <p>Loading statistics...</p>
+    <p>Caricamento...</p>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -47,7 +47,11 @@
     // --- Update the Statistics Box ---
     const statsDiv = document.getElementById('map-stats');
     const totalLocations = locations.length;
-    statsDiv.innerHTML = `<p>Total locations visited: <strong>${totalLocations}</strong></p>`;
+    statsDiv.innerHTML = `<div>
+      <p>Città: <strong>${totalLocations}</strong></p>
+      <p>Nazioni: <strong>6</strong></p>
+      <p>Continenti: <strong>2</strong></p>
+      </div>`;
   </script>
 </body>
 </html>
