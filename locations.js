@@ -149,4 +149,5 @@ const locations = [
   { lat: 37.1613, lng: 14.7489, name: "Vizzini" },
   { lat: 51.5085, lng: -0.1257, name: "Londra" },
   { lat: 37.1485, lng: 14.3878, name: "Niscemi" },
+{ lat: 40.6401, lng: 22.9444, name: "Salonicco" },
 ];
